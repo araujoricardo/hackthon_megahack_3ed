@@ -1,10 +1,10 @@
 import React from "react";
 import { ConnectedRouter } from "connected-react-router";
 import { Switch, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import PageError from "../pages/PageError";
-import Company from "../pages/Company";
-import Profile from "../pages/Profile";
+import Home from "../../pages/Home";
+import PageError from "../../pages/PageError";
+import Company from "../../pages/Company";
+import Profile from "../../pages/Profile";
 
 export const routes = {
   home: "/",

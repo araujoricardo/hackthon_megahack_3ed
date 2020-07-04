@@ -1,8 +1,8 @@
 import React from 'react';
-import Router from '../Router';
+import Router from '../containers/Router';
 import { createBrowserHistory } from "history";
 import { createStore, applyMiddleware, compose } from "redux";
-import { generateReducers } from "../components/Reducers";
+import { generateReducers } from "../containers/Reducers";
 import { routerMiddleware } from "connected-react-router";
 import thunk from "redux-thunk";
 import { Provider } from 'react-redux';
