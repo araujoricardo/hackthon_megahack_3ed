@@ -8,6 +8,7 @@ import Profile from "../../pages/Profile";
 import Initial from "../../pages/Initial";
 import SplashScreen from "../../pages/SplashScreen"
 import Quiz from "../../pages/Quiz";
+import Shop from "../../pages/Shop";
 
 export const routes = {
   
@@ -17,7 +18,8 @@ export const routes = {
   company: "/company",
   profile: "/profile",
   quiz: "/quiz",
-  error: "/"
+  error: "/",
+  shop: "/shop",
 };
 
 function Router(props) {
@@ -30,6 +32,7 @@ function Router(props) {
         <Route exact path={routes.company} component={Company} />
         <Route exact path={routes.profile} component={Profile} />
         <Route exact path={routes.quiz} component={Quiz} />
+        <Route exact path={routes.shop} component={Shop} />
         <Route path={routes.error} component={PageError} />
       </Switch>
     </ConnectedRouter>
