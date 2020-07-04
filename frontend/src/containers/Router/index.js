@@ -16,7 +16,7 @@ export const routes = {
   home: "/home",
   company: "/company",
   profile: "/profile",
-  quiz: "/quiz",
+  quiz: "/quizz",
   error: "/"
 };
 

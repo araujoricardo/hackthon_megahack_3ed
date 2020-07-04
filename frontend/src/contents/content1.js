@@ -1,7 +1,7 @@
 export const content1 = [
     {
         type: "card1",
-        text: "texto legal aqui - 1",
+        text: "De acordo com Daniel Goleman os 4 pilares de IE são: (- 1)",
         options: {
             a: "primeira opçao",
             b: "segunda opcao",
@@ -11,7 +11,7 @@ export const content1 = [
         answer : "a"
     },
     {
-        type: "card2",
+        type: "card1",
         text: "texto legal aqui - 2",
         options: {
             a: "primeira ",

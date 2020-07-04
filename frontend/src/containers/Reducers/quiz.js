@@ -1,5 +1,4 @@
 const initialState = {
-    content: 1,
     currentQuestion: 0,
     answer:[]
 };
