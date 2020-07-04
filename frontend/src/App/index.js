@@ -10,11 +10,12 @@ import {MuiThemeProvider,createGenerateClassName,jssPreset,CssBaseline} from "@m
 import JssProvider from "react-jss/lib/JssProvider";
 import { create } from "jss";
 import theme from "../style/theme";
+import {AppWrapper, MobileWrapper} from "./style";
+
 
 const generateClassName = createGenerateClassName();
 const jss = create({
   ...jssPreset(),
-  // We define a custom insertion point that JSS will look for injecting the styles in the DOM.
   insertionPoint: document.getElementById("jss-insertion-point")
 });
 
@@ -35,7 +36,11 @@ function App() {
       <JssProvider jss={jss} generateClassName={generateClassName}>
         <MuiThemeProvider theme={theme}>
         <CssBaseline />
-          <Router history={history} />
+          <AppWrapper>
+            <MobileWrapper>
+              <Router history={history} />
+            </MobileWrapper>
+          </AppWrapper>
         </MuiThemeProvider>
       </JssProvider>    
     </Provider>
