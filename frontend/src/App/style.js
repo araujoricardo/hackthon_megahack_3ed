@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const AppWrapper = styled.div`
-    background-color: yellow;
     height: 100vh;
     width: 100vw;
     margin: 0;

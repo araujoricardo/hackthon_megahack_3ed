@@ -6,18 +6,10 @@ import { generateReducers } from "../containers/Reducers";
 import { routerMiddleware } from "connected-react-router";
 import thunk from "redux-thunk";
 import { Provider } from 'react-redux';
-import {MuiThemeProvider,createGenerateClassName,jssPreset,CssBaseline} from "@material-ui/core";
-import JssProvider from "react-jss/lib/JssProvider";
-import { create } from "jss";
-import theme from "../style/theme";
+import { ThemeProvider } from "styled-components";
+import {theme, GlobalStyle} from "../style/theme";
 import {AppWrapper, MobileWrapper} from "./style";
 
-
-const generateClassName = createGenerateClassName();
-const jss = create({
-  ...jssPreset(),
-  insertionPoint: document.getElementById("jss-insertion-point")
-});
 
 export const history = createBrowserHistory();
 
@@ -33,16 +25,14 @@ const store = createStore(generateReducers(history), compose(...middlewares));
 function App() {
   return (
     <Provider store={store}>
-      <JssProvider jss={jss} generateClassName={generateClassName}>
-        <MuiThemeProvider theme={theme}>
-        <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
           <AppWrapper>
             <MobileWrapper>
               <Router history={history} />
             </MobileWrapper>
           </AppWrapper>
-        </MuiThemeProvider>
-      </JssProvider>    
+      </ThemeProvider>
     </Provider>
   );
 };
