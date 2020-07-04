@@ -15,6 +15,7 @@ class Quiz extends React.Component{
         //     );
         // });
 
+        const element = content1[this.props.content1];
         return (
             <CardType1
                 text={content1[0].text}
