@@ -6,12 +6,14 @@ import PageError from "../../pages/PageError";
 import Company from "../../pages/Company";
 import Profile from "../../pages/Profile";
 import Initial from "../../pages/Initial";
+import Quiz from "../../pages/Quiz";
 
 export const routes = {
   initial: "/",
   home: "/home",
   company: "/company",
   profile: "/profile",
+  quiz: "/quiz",
   error: "/"
 };
 
@@ -23,6 +25,7 @@ function Router(props) {
         <Route exact path={routes.home} component={Home} />
         <Route exact path={routes.company} component={Company} />
         <Route exact path={routes.profile} component={Profile} />
+        <Route exact path={routes.quiz} component={Quiz} />
         <Route path={routes.error} component={PageError} />
       </Switch>
     </ConnectedRouter>
