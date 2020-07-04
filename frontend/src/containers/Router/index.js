@@ -6,9 +6,12 @@ import PageError from "../../pages/PageError";
 import Company from "../../pages/Company";
 import Profile from "../../pages/Profile";
 import Initial from "../../pages/Initial";
+import SplashScreen from "../../pages/SplashScreen"
 
 export const routes = {
-  initial: "/",
+  
+  splashScreen: "/",
+  // initial: "/",
   home: "/home",
   company: "/company",
   profile: "/profile",
@@ -19,7 +22,8 @@ function Router(props) {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
-        <Route exact path={routes.initial} component={Initial} />
+        <Route exact path={routes.splashScreen} component ={SplashScreen}/>
+        {/* <Route exact path={routes.initial} component={Initial} /> */}
         <Route exact path={routes.home} component={Home} />
         <Route exact path={routes.company} component={Company} />
         <Route exact path={routes.profile} component={Profile} />
