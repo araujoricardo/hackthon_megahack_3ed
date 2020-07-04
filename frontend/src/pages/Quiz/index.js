@@ -3,7 +3,7 @@ import CardType1 from "../../components/CardType1";
 import {content1} from "../../contents/content1";
 import { connect } from "react-redux";
 import {setQuestion, setAnswer} from "../../containers/actions/quiz";
-
+import { QuizzWrapper, ButtonQuizz, NumberPage } from "./style"
 
 class Quiz extends React.Component{
 
@@ -53,13 +53,15 @@ class Quiz extends React.Component{
 
 
     render(){
+        const pageNumber = this.props.currentQuestion + 1;
+
         return(
-            <div>
-                QUIZ
+            <QuizzWrapper>
+                <NumberPage>{pageNumber}/{content1.length}</NumberPage>            
                 {this.renderContent()}
-                <button onClick={()=>this.handleChangeQuestion(1)}>next</button>
-                <button onClick={()=>this.handleChangeQuestion(-1)}>back</button>
-            </div>
+                <ButtonQuizz onClick={()=>this.handleChangeQuestion(1)}>next</ButtonQuizz>
+                <ButtonQuizz onClick={()=>this.handleChangeQuestion(-1)}>back</ButtonQuizz>
+            </QuizzWrapper>
         );
     };
 

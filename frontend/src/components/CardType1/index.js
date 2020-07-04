@@ -1,39 +1,63 @@
 import React from "react";
-import {Card1Wrapper} from "./style";
+import { Card1Wrapper, Question, WrapperOptions, Option } from "./style";
 
-export default function CardType1(props){
+export default class CardType1 extends React.Component {
+  constructor(props) {
+    super(props);
 
-    const question = props.element;
-    
-    const handleOnChange=(event)=>{
-        props.handleAnswer(event.target.value);
+    this.state = {
+      activeOption: 0,
     };
-    
-    return(
-        <Card1Wrapper>
-            <p>question</p>
-            <p>{question.text}</p>
-            <p>Resposta: </p>
+  }
 
-            <input type="checkbox" 
-                onChange={handleOnChange}
-                value="a"/>
-            <label>{question.options.a}</label>
-            <br/>
-            <input type="checkbox" 
-                onChange={handleOnChange}
-                value="b"/>
-            <label>{question.options.b}</label>
-            <br/>
-            <input type="checkbox" 
-                onChange={handleOnChange}
-                value="c"/>
-            <label>{question.options.c}</label>
-            <br/>
-            <input type="checkbox" 
-                onChange={handleOnChange}
-                value="d"/>
-            <label>{question.options.d}</label>
-        </Card1Wrapper>
+  handleActive = (value) => {
+
+    let letterToNumber = value.charCodeAt() - 96
+
+    this.setState({ activeOption: letterToNumber });
+  };
+
+  handleOnClick = (value) => {
+    this.handleActive(value);
+    this.props.handleAnswer(value);
+  };
+
+  render() {
+    const question = this.props.element;
+    return (
+      <Card1Wrapper>
+        <Question>{question.text}</Question>
+        <WrapperOptions>
+          <Option
+            active={this.state.activeOption}
+            onClick={() => this.handleOnClick("a") }
+            value="a"
+          >
+            {question.options.a}
+          </Option>
+          <Option
+            active={this.state.activeOption}
+            onClick={() => this.handleOnClick("b") }
+            value="b"
+          >
+            {question.options.a}
+          </Option>
+          <Option
+            active={this.state.activeOption}
+            onClick={() => this.handleOnClick("c") }
+            value="c"
+          >
+            {question.options.a}
+          </Option>
+          <Option
+            active={this.state.activeOption}
+            onClick={() => this.handleOnClick("d") }
+            value="d"
+          >
+            {question.options.a}
+          </Option>
+        </WrapperOptions>
+      </Card1Wrapper>
     );
-};
+  }
+}
