@@ -5,15 +5,13 @@ import Home from "../../pages/Home";
 import PageError from "../../pages/PageError";
 import Company from "../../pages/Company";
 import Profile from "../../pages/Profile";
-import Initial from "../../pages/Initial";
-import SplashScreen from "../../pages/SplashScreen"
+import SplashScreen from "../../pages/SplashScreen";
 import Quiz from "../../pages/Quiz";
 import Shop from "../../pages/Shop";
 
 export const routes = {
   
   splashScreen: "/",
-  // initial: "/",
   home: "/home",
   company: "/company",
   profile: "/profile",
@@ -27,7 +25,6 @@ function Router(props) {
     <ConnectedRouter history={props.history}>
       <Switch>
         <Route exact path={routes.splashScreen} component ={SplashScreen}/>
-        {/* <Route exact path={routes.initial} component={Initial} /> */}
         <Route exact path={routes.home} component={Home} />
         <Route exact path={routes.company} component={Company} />
         <Route exact path={routes.profile} component={Profile} />
@@ -37,6 +34,6 @@ function Router(props) {
       </Switch>
     </ConnectedRouter>
   );
-}
+};
 
 export default Router;
