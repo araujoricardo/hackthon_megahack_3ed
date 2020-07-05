@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import { routes } from "../../containers/Router";
 import { push } from "connected-react-router";
 import { WrapperIcons,DivIcon, Img} from './style';
-import Divider from '@material-ui/core/Divider'
+
 
 class Footer extends Component {
     constructor(props) {
@@ -24,7 +24,7 @@ class Footer extends Component {
                  title="Maleta" 
                  alt="ícone para ir para informações sobre empresa" 
                  style = {{color: "very dark gray"}}
-                 onCLick= {goToCompany}
+                 onClick= {goToCompany}
              />
                     
             </DivIcon>                                                  
@@ -32,7 +32,7 @@ class Footer extends Component {
              <Img src={require('../../assets/home.png')} 
                     title = "Home"
                     alt="ícone para ir para home"
-                    onCLick= {goToHome}
+                    onClick= {goToHome}
              /> 
               
             </DivIcon>  
@@ -40,7 +40,7 @@ class Footer extends Component {
              <Img src={require('../../assets/account.png')} 
                 title="Perfil" 
                 alt="ícone para ir para o perfil do usuário"
-                onCLick= {goToMyProfile}
+                onClick= {goToMyProfile}
              /> 
                
             </DivIcon>

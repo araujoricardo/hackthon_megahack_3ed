@@ -1,5 +1,5 @@
 import React from "react";
-import CardType1 from "../../components/CardType1";
+import CardType1 from "../../Components/CardType1";
 import {content1} from "../../contents/content1";
 import { connect } from "react-redux";
 import {setQuestion, setAnswer} from "../../containers/actions/quiz";
@@ -47,8 +47,6 @@ class Quiz extends React.Component{
             this.props.setQuestion(value);
         };
     };
-
-
 
 
 

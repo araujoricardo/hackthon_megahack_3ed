@@ -9,21 +9,22 @@ class SplashScreen extends Component {
         super(props);
         this.state = {
             
-    };
-}
+        };
+    }
 
-handleSplash = (e) => {
-   
-    this.props.goToHome()
+  componentDidMount(){
+    window.setTimeout(
+        this.props.goToHome, 3000
+    );
+  };
 
- }
 
 render() {
    
     return (
      <Fragment>
          
-             <Wrapper onClick={this.handleSplash}>
+             <Wrapper>
                  <Img src={require("../../assets/image.png")} 
                     alt="logo da HamiTrainning" 
                 /> 
@@ -40,32 +41,4 @@ const mapDispatchToProps = dispatch => ({
 })
 
 
-export default connect(null, mapDispatchToProps)(SplashScreen)
-
-/*
-const duration = 300;
-
-const defaultStyle = {
-  transition: `opacity ${duration}ms ease-in-out`,
-  opacity: 0,
-}
-
-const transitionStyles = {
-  entering: { opacity: 1 },
-  entered:  { opacity: 1 },
-  exiting:  { opacity: 0 },
-  exited:  { opacity: 0 },
-};
-
-export const Fade = ({ in: inProp }) => (
-  <Transition in={inProp} timeout={duration}>
-    {state => (
-      <div style={{
-        ...defaultStyle,
-        ...transitionStyles[state]
-      }}>
-       //LOGO
-      </div>
-    )}
-  </Transition>
-); */
+export default connect(null, mapDispatchToProps)(SplashScreen);
