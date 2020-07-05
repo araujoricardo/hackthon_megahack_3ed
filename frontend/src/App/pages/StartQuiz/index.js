@@ -1,27 +1,52 @@
 import React from "react";
-import Footer from "../../components/Footer"
-import { MainWrapper, ImgWrapper, ImgQuiz, TextWrapper, ButtonsWrapper, ButtonBack, ButtonStart } from "./style"
-import imgQuiz from "../../../assets/startQuiz.svg"
+import { connect } from "react-redux";
+import { routes } from "../../Router";
+import { push } from "connected-react-router";
+import Footer from "../../components/Footer";
+import {
+  MainWrapper,
+  ImgWrapper,
+  ImgQuiz,
+  WrapperStyle,
+  TextWrapper,
+  ButtonsWrapper,
+  ButtonBack,
+  ButtonStart,
+} from "./style";
+import imgQuiz from "../../../assets/startQuiz.svg";
 
-export default class StartQuiz extends React.Component {
-    render(){
-        return(
-            <MainWrapper>
-                <ImgWrapper>
-                    <ImgQuiz src={imgQuiz}/>
-                </ImgWrapper>
-                <TextWrapper>
-                    <h1>Iniciar Quiz </h1>
-                    <ul>
-                        <li>primeiro</li>
-                    </ul>
-                </TextWrapper>
-                <ButtonsWrapper>
-                    <ButtonBack> Voltar </ButtonBack>
-                    <ButtonStart> Iniciar </ButtonStart>  
-                </ButtonsWrapper>
-                <Footer/>
-            </MainWrapper>
-        )
-    }
+export class StartQuiz extends React.Component {
+  render() {
+    return (
+      <MainWrapper>
+        <ImgWrapper>
+          <ImgQuiz src={imgQuiz} />
+        </ImgWrapper>
+        <WrapperStyle>
+          <TextWrapper>
+            <h1>Iniciar quiz: <br/> Saúde mental no trabalho</h1>
+            <ul>
+              <li>Hábitos saudáveis</li>
+              <li>Relacionamento entre a equipe</li>
+              <li>Produtividade e contribuição</li>
+            </ul>
+          </TextWrapper>
+          <ButtonsWrapper>
+            <ButtonBack onClick={this.props.gotToHome}> VOLTAR </ButtonBack>
+            <ButtonStart onClick={this.props.goToQuiz}> INICIAR </ButtonStart>
+          </ButtonsWrapper>
+        </WrapperStyle>
+        <Footer />
+      </MainWrapper>
+    );
+  }
 }
+
+
+const mapDispatchToProps = (dispatch) => ({
+    gotToHome: () => dispatch(push(routes.home)),
+    goToQuiz: () => dispatch(push(routes.quiz)),
+  });
+  
+export default connect(null, mapDispatchToProps)(StartQuiz);
+  
