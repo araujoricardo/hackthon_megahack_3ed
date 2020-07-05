@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./styles";
 import { connect } from "react-redux";
-import { buyItem } from "../../containers/actions/shop";
+import { buyItem } from "../../../redux/actions/shop";
 
 class ShopItem extends React.Component {
   handleClick = () => {

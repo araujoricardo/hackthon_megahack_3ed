@@ -1,13 +1,13 @@
 import React from "react";
-import Router from "../containers/Router";
+import Router from "./Router";
 import { createBrowserHistory } from "history";
 import { createStore, applyMiddleware, compose } from "redux";
-import { generateReducers } from "../containers/Reducers";
+import { generateReducers } from "../redux/Reducers";
 import { routerMiddleware } from "connected-react-router";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
-import { theme, GlobalStyle } from "../style/theme";
+import { theme, GlobalStyle } from "./style/theme";
 import { AppWrapper, MobileWrapper } from "./style";
 
 export const history = createBrowserHistory();
