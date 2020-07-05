@@ -6,7 +6,7 @@ export const theme = {
   lightGray: "#a8bbc6",
   darkOrange: "#fe7e02",
   lightOrange: "#f9b24e",
-  background: "fff",
+  // background: "fff",
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${theme.lightGray};
+    /* background: ${theme.lightGray}; */
     font-family: 'Roboto', sans-serif;
   };
 

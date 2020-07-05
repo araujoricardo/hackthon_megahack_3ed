@@ -2,15 +2,7 @@ import React, {Component, Fragment} from "react"
 import { connect } from"react-redux"
 import { push } from "connected-react-router";
 import { routes } from "../../containers/Router";
-import styled from 'styled-components'
-
-const Wrapper= styled.div `
-    background-color:#1E839D;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-`
-
+import { Wrapper, Img } from "./style";
 
 class SplashScreen extends Component {
     constructor(props){
@@ -32,10 +24,9 @@ render() {
      <Fragment>
          
              <Wrapper onClick={this.handleSplash}>
-                {/* <img src={require()} 
+                 <Img src={require("../../assets/image.png")} 
                     alt="logo da HamiTrainning" 
-                /> */}
-                <p>LOGO</p>
+                /> 
              </Wrapper>
         
      </Fragment>
