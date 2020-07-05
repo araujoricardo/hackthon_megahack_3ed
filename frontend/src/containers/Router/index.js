@@ -5,7 +5,7 @@ import Home from "../../pages/Home";
 import PageError from "../../pages/PageError";
 import Company from "../../pages/Company";
 import Profile from "../../pages/Profile";
-import Initial from "../../pages/Initial";
+//import Initial from "../../pages/Initial";
 import SplashScreen from "../../pages/SplashScreen"
 import Quiz from "../../pages/Quiz";
 
