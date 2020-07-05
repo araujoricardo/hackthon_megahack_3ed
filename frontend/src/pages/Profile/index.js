@@ -10,10 +10,11 @@ export default class Profile extends React.Component{
              <WrapperProfile> 
                 <Title>Meu perfil</Title>
              </WrapperProfile>
+
              <Info>
                  <p><strong>Nome: </strong>Margaret Hamilton</p>
                  <br/>
-                 <p><strong>Cargo: </strong></p>
+                 <p><strong>Cargo: </strong>Engenharia de software</p>
                  <br/>
                  <p><strong>CPF: </strong>123-456-789-00</p>
                  <br/>
@@ -21,8 +22,10 @@ export default class Profile extends React.Component{
                  <br/>
                  <p><strong>E-mail: </strong>margaret@labenu</p>
              </Info>
+
+
              <Footer />
-               
+    
             </Div>
         );
     };

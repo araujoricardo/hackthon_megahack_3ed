@@ -8,16 +8,16 @@ export const WrapperSearch = styled.div`
 `
 export const Input = styled.input`
   
-  background-color : #c7c6ad;
-  /* opacity: 50%; */
-  padding: 1%;
-  padding-right:5px;
-  border-radius:5px;
-  width:90%;
-  height:7vh ;
-  margin-left: 5vw;
-  margin-top:1.5vh;
-  border:none;
+    background-color : rgba(0, 0, 0, 0.11);
+    /* opacity: 50%; */
+    padding: 1%;
+    padding-right:5px;
+    border-radius:5px;
+    width:90%;
+    height:7vh ;
+    margin-left: 5vw;
+    margin-top:1.5vh;
+    border:none;
     
     ::placeholder {
       color:#585858;
