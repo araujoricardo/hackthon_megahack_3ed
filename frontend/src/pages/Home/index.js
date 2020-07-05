@@ -7,15 +7,12 @@ import Search from "../../components/Search";
 export default class Home extends React.Component {
   render() {
     return (
-      <Div>
-        <WrapperHome>
-          <Title>Cursos disponíveis</Title>
-          <Search />
-
-          <Courses />
-          <Footer />
-        </WrapperHome>
-      </Div>
+      <WrapperHome>
+        <Title>Cursos disponíveis</Title>
+        <Search />
+        <Courses />
+        <Footer />
+      </WrapperHome>
     );
   }
 }
