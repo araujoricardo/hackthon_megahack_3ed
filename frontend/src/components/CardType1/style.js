@@ -25,9 +25,20 @@ export const Option = styled.div`
   border-radius: 15px;
   background-color: rgba(88, 88, 88, 38%);
   padding: 15px 10px;
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD
+  :nth-of-type(${props => props.active}){
+    && {background-color: rgba(30,131, 157, 58%);}
+========
+>>>>>>> d3b9bfc1081d62b5517cef3cf41be57d9bf3b44b
   :nth-of-type(${(props) => props.active}) {
     && {
       background-color: gold;
     }
+<<<<<<< HEAD
+=======
+>>>>>>>> d3b9bfc1081d62b5517cef3cf41be57d9bf3b44b
+>>>>>>> d3b9bfc1081d62b5517cef3cf41be57d9bf3b44b
   }
 `;
