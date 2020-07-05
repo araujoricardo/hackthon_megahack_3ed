@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer"
 import { MainWrapper, ImgWrapper, ImgQuiz, TextWrapper, ButtonsWrapper, ButtonBack, ButtonStart } from "./style"
-import imgQuiz from "../../assets/startQuiz.svg"
+import imgQuiz from "../../../assets/startQuiz.svg"
 
 export default class StartQuiz extends React.Component {
     render(){
