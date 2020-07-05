@@ -13,10 +13,9 @@ export const Input = styled.input`
   padding: 1%;
   padding-right:5px;
   border-radius:5px;
-  width:90vw;
+  width:90%;
   height:7vh ;
   margin-left: 5vw;
-  
   margin-top:1.5vh;
   border:none;
     

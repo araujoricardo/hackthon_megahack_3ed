@@ -2,7 +2,7 @@ import React, {Component } from "react"
 import {connect} from 'react-redux';
 import { routes } from "../../containers/Router";
 import { push } from "connected-react-router";
-import { WrapperIcons,DivIcon, Img} from './style';
+import { WrapperIcons,DivIcon, Img, Div, DivFooter} from './style';
 
 
 class Footer extends Component {
@@ -17,6 +17,8 @@ class Footer extends Component {
      const { goToHome, goToMyProfile, goToCompany} = this.props
      
  return (
+   
+       <Div>
         <WrapperIcons>  
           <DivIcon>
                 
@@ -45,6 +47,7 @@ class Footer extends Component {
                
             </DivIcon>
         </WrapperIcons>
+</Div>
       
         );
     

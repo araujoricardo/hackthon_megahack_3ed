@@ -12,16 +12,13 @@ export class Search extends React.Component {
 
     render() {
         return (
-            <WrapperSearch>
-                
-                 
+            <WrapperSearch> 
                     <Input
-                        
+                
                         type="text"
                         placeholder="Buscar curso" style= {{color:"#585858"}}
                         placeholderStyle = {{color:"#585858"}}
                     />
-             
             </WrapperSearch>
         );
     }
