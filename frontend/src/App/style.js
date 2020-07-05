@@ -15,4 +15,5 @@ export const MobileWrapper = styled.div`
     height: 667px;
     width: 375px;
     border: 1px solid black;
+    margin-top: 80px;
 `;

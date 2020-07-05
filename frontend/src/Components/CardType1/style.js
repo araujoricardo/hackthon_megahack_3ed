@@ -27,6 +27,6 @@ export const Option = styled.div`
   background-color: rgba(88,88,88, 38%);
   padding: 15px 10px;
   :nth-of-type(${props => props.active}){
-    && {background-color: gold;}
+    && {background-color: rgba(30,131, 157, 58%);}
   }
 `;
