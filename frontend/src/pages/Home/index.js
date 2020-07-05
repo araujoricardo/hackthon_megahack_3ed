@@ -16,8 +16,9 @@ export default class Home extends React.Component {
                 <Search />
                 
                 <Courses />
+                <Footer />
             </WrapperHome>  
-            <Footer />
+            
             </Div>
         )
     };

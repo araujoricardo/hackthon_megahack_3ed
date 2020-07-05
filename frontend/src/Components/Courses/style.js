@@ -8,7 +8,7 @@ export const WrapperCurso = styled.div`
     grid-template-rows:1fr 1fr;
     align-self:center;
     grid-gap:18px;
-    margin: 4vh 15px 0 15px;
+    margin: 5vh 15px 0 15px;
 `
 
 export const CourseCard = styled.div `

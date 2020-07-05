@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-
-
 export const Img = styled.img `
     width: 30px;
     color: #585858;
@@ -11,15 +9,14 @@ export const Img = styled.img `
 
 export const WrapperIcons = styled.div `
   
-    width:100vw;
+    width:375px;
     display:flex;
     justify-content:space-around;
     flex-direction:row;
     position: fixed;
     bottom:0%;
     background-color:white;
-    padding:5px;
-  
+    padding:3px;
    
 `
 export const DivIcon = styled.div`
@@ -30,3 +27,7 @@ export const DivIcon = styled.div`
     align-items:center;
     justify-content:center;
 `
+export const Div = styled.div`
+   
+   
+`;
