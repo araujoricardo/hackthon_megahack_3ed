@@ -27,9 +27,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <AppWrapper>
-          <MobileWrapper>
-            <Router history={history} />
-          </MobileWrapper>
+          <Router history={history} />
         </AppWrapper>
       </ThemeProvider>
     </Provider>
