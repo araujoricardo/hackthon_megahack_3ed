@@ -1,9 +1,9 @@
 import React from "react";
-import CardType1 from "../../components/CardType1";
-import { content1 } from "../../contents/content1";
 import { connect } from "react-redux";
-import { setQuestion, setAnswer } from "../../containers/actions/quiz";
-import { QuizzWrapper, ButtonQuizz, NumberPage } from "./style";
+import CardType1 from "../../components/CardType1";
+import { setAnswer, setQuestion } from "../../containers/actions/quiz";
+import { content1 } from "../../contents/content1";
+import { ButtonQuizz, NumberPage, QuizzWrapper } from "./style";
 
 class Quiz extends React.Component {
   renderContent = () => {

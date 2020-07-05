@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../Components/Footer"
+import Footer from "../../components/Footer"
 import { MainWrapper, ImgWrapper, ImgQuiz, TextWrapper, ButtonsWrapper, ButtonBack, ButtonStart } from "./style"
 import imgQuiz from "../../assets/startQuiz.svg"
 
