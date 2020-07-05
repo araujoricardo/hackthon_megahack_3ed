@@ -1,5 +1,4 @@
-import { createGlobalStyle  } from "styled-components";
-
+import { createGlobalStyle } from "styled-components";
 
 export const theme = {
   darkGray: "#45525b",

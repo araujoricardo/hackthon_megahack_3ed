@@ -1,29 +1,24 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const WrapperCompany = styled.div`
-    
-    background-color:white;
-    display:grid;
-    /* grid-template-rows:1fr 1fr 1fr 1fr;
-    align-self:center; */
-    /* grid-gap:18px; */
-    /* margin: 6vh 15px 0 15px; */
-`
+  width: 100%;
+  height: calc(100% - 64px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 
-export const CardText = styled.div `
-   background-color:#1E839D;
-   width:40%;
-   height:15rem;
-   border-radius: 8px; 
-   padding:0 auto 0 auto;
-   opacity:70%;
-   float:right;
-   vertical-align:top;
-   
+export const Img = styled.img`
+  max-width: 400px;
+  width: 100%;
+`;
 
-`
-export const Img = styled.img ` 
-    width:30%;
-    object-fit:contain;
-`
+export const CardText = styled.div`
+  max-width: 400px;
+  font-size: 16px;
+  background-color: #1e839d;
+  padding: 16px;
+  border-radius: 8px;
+  opacity: 70%;
+  margin: 8px;
+`;
