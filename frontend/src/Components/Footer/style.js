@@ -18,7 +18,7 @@ export const WrapperIcons = styled.div `
     position: fixed;
     bottom:0%;
     background-color:white;
-    padding:10px;
+    padding:5px;
   
    
 `
