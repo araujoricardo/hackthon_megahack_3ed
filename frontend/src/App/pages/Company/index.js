@@ -1,5 +1,6 @@
 import React from "react";
 import { WrapperCompany, Img, CardText } from "./style";
+import Footer from "../../components/Footer";
 
 export default class Company extends React.Component {
   render() {
@@ -14,6 +15,7 @@ export default class Company extends React.Component {
           mudar a realidade das pessoas, é preciso fazer parte dessa
           transformação todos os dias.
         </CardText>
+        <Footer />
       </WrapperCompany>
     );
   }

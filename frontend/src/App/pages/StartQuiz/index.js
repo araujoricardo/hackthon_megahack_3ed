@@ -24,7 +24,9 @@ export class StartQuiz extends React.Component {
         </ImgWrapper>
         <WrapperStyle>
           <TextWrapper>
-            <h1>Iniciar quiz: <br/> Saúde mental no trabalho</h1>
+            <h1>
+              Iniciar quiz: <br /> Saúde mental no trabalho
+            </h1>
             <ul>
               <li>Hábitos saudáveis</li>
               <li>Relacionamento entre a equipe</li>
@@ -42,11 +44,9 @@ export class StartQuiz extends React.Component {
   }
 }
 
-
 const mapDispatchToProps = (dispatch) => ({
-    gotToHome: () => dispatch(push(routes.home)),
-    goToQuiz: () => dispatch(push(routes.quiz)),
-  });
-  
+  gotToHome: () => dispatch(push(routes.home)),
+  goToQuiz: () => dispatch(push(routes.quiz)),
+});
+
 export default connect(null, mapDispatchToProps)(StartQuiz);
-  

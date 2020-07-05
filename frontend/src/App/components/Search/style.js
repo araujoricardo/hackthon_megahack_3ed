@@ -1,34 +1,22 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const WrapperSearch = styled.div`
-  color:#585858;
-   
-    
-`
+  width: 100%;
+  color: #585858;
+  padding: 8px;
+  font-size: 16px;
+`;
+
 export const Input = styled.input`
-  
-  background-color : #c7c6ad;
-  /* opacity: 50%; */
-  padding: 1%;
-  padding-right:5px;
-  border-radius:5px;
-  width:90%;
-  height:7vh ;
-  margin-left: 5vw;
-  margin-top:1.5vh;
-  border:none;
-    
-    ::placeholder {
-      color:#585858;
-      opacity:none;
-      margin-right:10px;
-   
-     }
-`
+  width: 100%;
+  background-color: #c7c6ad;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
 
-
-export const Img = styled.img `
-   height: 2.5vh;
-
-`
+  ::placeholder {
+    color: #585858;
+    opacity: none;
+    margin-right: 10px;
+  }
+`;

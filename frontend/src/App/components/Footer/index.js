@@ -1,13 +1,12 @@
+import { push } from "connected-react-router";
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { routes } from "../../Router";
-import { push } from "connected-react-router";
-import { WrapperIcons, DivIcon, Img, Div, DivFooter } from "./style";
+import { Container, DivIcon, Img, WrapperIcons } from "./style";
 
 class Footer extends Component {
   constructor(props) {
     super(props);
-
     this.state = {};
   }
 
@@ -15,7 +14,7 @@ class Footer extends Component {
     const { goToHome, goToMyProfile, goToCompany } = this.props;
 
     return (
-      <Div>
+      <Container>
         <WrapperIcons>
           <DivIcon>
             <Img
@@ -43,12 +42,12 @@ class Footer extends Component {
             />
           </DivIcon>
         </WrapperIcons>
-      </Div>
+      </Container>
     );
   }
 }
 const mapDispatchToProps = (dispatch) => ({
-  gotToHome: () => dispatch(push(routes.home)),
+  goToHome: () => dispatch(push(routes.home)),
   goToMyProfile: () => dispatch(push(routes.profile)),
   goToCompany: () => dispatch(push(routes.company)),
 });

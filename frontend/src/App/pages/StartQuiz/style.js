@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const MainWrapper = styled.section``;
+export const MainWrapper = styled.section`
+  height: calc(100% - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+`;
 
 export const ImgWrapper = styled.div`
   display: flex;
