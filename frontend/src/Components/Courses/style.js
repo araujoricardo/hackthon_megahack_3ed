@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const WrapperCurso = styled.div`
     
     background-color:white;
@@ -9,7 +8,7 @@ export const WrapperCurso = styled.div`
     grid-template-rows:1fr 1fr;
     align-self:center;
     grid-gap:18px;
-    margin: 6vh 15px 0 15px;
+    margin: 4vh 15px 0 15px;
 `
 
 export const CourseCard = styled.div `
@@ -17,7 +16,7 @@ export const CourseCard = styled.div `
    width:100%;
    height:15rem;
    border-radius: 8px; 
-   padding:0 auto 0 auto;
+   padding:0 auto; 
    opacity:70%;
 
 `
@@ -55,10 +54,10 @@ export const CardTitle = styled.div `
    text-align:center;
    align-self:center;
    margin-left:35%;
-   margin-top:6%;
+   margin-top:4%;
 `
-export const CourseName = styled.h2 `
-
+export const CourseName = styled.h1 `
+    font-size:1.2em;
     color:white;
     text-align:center;
     margin-top:6%;
@@ -76,7 +75,7 @@ export const Button = styled.button `
     border: 1px solid #157c96;
     color:white;
     padding: 5%;
-    margin-top:1vh;
+    margin-top:0.9vh;
     margin-left:25%;
     
 
