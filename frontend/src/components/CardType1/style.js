@@ -6,7 +6,7 @@ export const Card1Wrapper = styled.div`
   flex-direction: column;
   padding: 15px;
   color: #252525;
-  border-top: 3px solid #1E839D;
+  border-top: 3px solid #1e839d;
 `;
 
 export const Question = styled.h2`
@@ -19,14 +19,26 @@ export const WrapperOptions = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 `;
 
 export const Option = styled.div`
   border-radius: 15px;
-  background-color: rgba(88,88,88, 38%);
+  background-color: rgba(88, 88, 88, 38%);
   padding: 15px 10px;
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD
   :nth-of-type(${props => props.active}){
-    && {background-color: gold;}
+    && {background-color: rgba(30,131, 157, 58%);}
+========
+>>>>>>> d3b9bfc1081d62b5517cef3cf41be57d9bf3b44b
+  :nth-of-type(${(props) => props.active}) {
+    && {
+      background-color: gold;
+    }
+<<<<<<< HEAD
+=======
+>>>>>>>> d3b9bfc1081d62b5517cef3cf41be57d9bf3b44b
+>>>>>>> d3b9bfc1081d62b5517cef3cf41be57d9bf3b44b
   }
 `;

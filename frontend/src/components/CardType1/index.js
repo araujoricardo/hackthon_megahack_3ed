@@ -11,8 +11,7 @@ export default class CardType1 extends React.Component {
   }
 
   handleActive = (value) => {
-
-    let letterToNumber = value.charCodeAt() - 96
+    let letterToNumber = value.charCodeAt() - 96;
 
     this.setState({ activeOption: letterToNumber });
   };
@@ -30,28 +29,28 @@ export default class CardType1 extends React.Component {
         <WrapperOptions>
           <Option
             active={this.state.activeOption}
-            onClick={() => this.handleOnClick("a") }
+            onClick={() => this.handleOnClick("a")}
             value="a"
           >
             {question.options.a}
           </Option>
           <Option
             active={this.state.activeOption}
-            onClick={() => this.handleOnClick("b") }
+            onClick={() => this.handleOnClick("b")}
             value="b"
           >
             {question.options.a}
           </Option>
           <Option
             active={this.state.activeOption}
-            onClick={() => this.handleOnClick("c") }
+            onClick={() => this.handleOnClick("c")}
             value="c"
           >
             {question.options.a}
           </Option>
           <Option
             active={this.state.activeOption}
-            onClick={() => this.handleOnClick("d") }
+            onClick={() => this.handleOnClick("d")}
             value="d"
           >
             {question.options.a}
