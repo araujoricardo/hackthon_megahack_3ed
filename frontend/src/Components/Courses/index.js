@@ -1,7 +1,12 @@
-import React, {Component } from "react"
-import { WrapperCurso, Course, Div,} from './style';
+import React, {Component } from "react";
+import {connect} from 'react-redux';
+import { routes } from "../../containers/Router";
+import { push } from "connected-react-router";
+import { WrapperCurso, CourseCard, CourseCard2, CourseCard3,
+     CourseCard4, CardTitle, CourseName, Div, Status,
+     Button} from './style';
 
-export default class Courses extends Component {
+class Courses extends Component {
     constructor(props) {
     super(props)
 
@@ -11,35 +16,86 @@ export default class Courses extends Component {
 }
 
 render() {
+    const { gotToQuiz } = this.props
 
  return (
      <Div>
         <WrapperCurso>
-           
-                <Course>
-                 <img src={require("../../assets/curso1.png")} 
-                        alt="curso1" />
-                </Course>
+            <CourseCard>
+                <CardTitle>
+                    A1
+                </CardTitle>
+                <CourseName>
+                    Inteligência<br/>
+                    Emocional
+                </CourseName>
+                <Status>
+                    Disponível
+                </Status>
+                <Button onClick= {gotToQuiz}>
+                     Partcipar
+                </Button>
+            
+                {/* <img src={require("../../assets/curso1.png")} 
+                    alt="curso1" /> */}
+            </CourseCard>
 
-                <Course>
-                <img src={require("../../assets/curso2.png")} 
-                        alt="curso2" />
-                </Course>
+           <CourseCard2>
+                <CardTitle>
+                    A2
+               </CardTitle>
+               <CourseName>
+                    Desenvolvendo<br/>
+                    Soft Skills
+                </CourseName>
+                <Status>
+                    Disponível em breve
+                </Status>
+                {/* <img src={require("../../assets/curso2.png")} 
+                        alt="curso2" /> */}
+            </CourseCard2>
            
-                <Course>
-                <img src={require("../../assets/curso3.png")} 
-                        alt="curso3" />
-                </Course>
+            <CourseCard3>
+                <CardTitle>
+                    A3
+                </CardTitle>
+                <CourseName>
+                    Desafio de estar<br/>
+                    Embarcado
+                </CourseName>
+                <Status>
+                    Disponível em breve
+                </Status>
+                {/* <img src={require("../../assets/curso3.png")} 
+                        alt="curso3" /> */}
+            </CourseCard3>
 
-                <Course>
-                <img src={require("../../assets/curso4.png")} 
-                      alt="curso4" />
-                </Course>
+            <CourseCard4>
+                <CardTitle>
+                    B1
+                </CardTitle>
+                <CourseName>
+                    Uso adequado<br/>
+                    de EPIs
+                </CourseName>
+                <Status>
+                    Disponível em breve
+                </Status>
+                {/* <img src={require("../../assets/curso4.png")} 
+                      alt="curso4" /> */}
+             </CourseCard4>
         
             
         </WrapperCurso>
      </Div>
- );
+   );
+ }
 }
+const mapDispatchToProps = (dispatch) => ({
+    gotToQuiz: () => dispatch(push(routes.quiz)),
 
-}
+
+ })
+
+
+export default connect(null,mapDispatchToProps)(Courses)
