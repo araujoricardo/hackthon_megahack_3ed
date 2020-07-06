@@ -34,29 +34,15 @@ Empresas que desejam capacitar seus funcionários, além de aumentar o engajamen
 
 **Organização de Features e Versionamento**
 
- :rocket: Github
- :rocket: Trello
+ :rocket: Github<br>
+ :rocket: Trello<br>
 
 **FRONT-END**
 
-:notebook: React
-:notebook: Redux
-
-**Serviços Utilizados:**
-
-EC2 - Utilizamos para armazenar o banco de dados relacional.
-Lambda - Utilizada para executar o backend da aplicação.
-API Gateway - Utilizada para gerenciar e redirecionar as requisições para a lambda.
-S3 - Utilizada para hospedar o frontend da nossa aplicação.
+:notebook: React<br>
+:notebook: Redux<br>
 
 ## Links e informações úteis
 
-**Usuário para teste**
-
-
-
-Site Hospedado - http://pegn.s3-website-us-east-1.amazonaws.com/
-
 [Trello](https://trello.com/b/guEPyY2R/hami-training)
 
-InvisioApp - [https://diogogaspar462897.invisionapp.com/board/Mockup------Layout-ck9og55lh01wy17vj240vste5?v=Byt5WyH2piftRaSXbfQA5A%3D%3D&linkshare=urlcopied](https://diogogaspar462897.invisionapp.com/board/Mockup------Layout-ck9og55lh01wy17vj240vste5?v=Byt5WyH2piftRaSXbfQA5A%3D%3D&linkshare=urlcopied)
