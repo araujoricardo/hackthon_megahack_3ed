@@ -19,9 +19,25 @@ Empresas que desejam capacitar seus funcionários, além de aumentar o engajamen
 **FRONT-END**
 
  :heavy_check_mark: Layout da tela inicial<br>
- :heavy_check_mark: Layout HomePage
- :heavy_check_mark: Layout da Empresa
- :heavy_check_mark: Layout do Perfil
- :heavy_check_mark: Layout do início do Quiz
- :heavy_check_mark: Layout das perguntas do Quiz
- :heavy_check_mark: Layout da pontuação
+ :heavy_check_mark: Layout HomePage<br>
+ :heavy_check_mark: Layout da Empresa<br>
+ :heavy_check_mark: Layout do Perfil<br>
+ :heavy_check_mark: Layout do início do Quiz<br>
+ :heavy_check_mark: Layout das perguntas do Quiz<br>
+ :heavy_check_mark: Layout da pontuação<br>
+ 
+ ## Tecnologias utilizadas
+ 
+**DESIGN**
+
+ - Fiama
+
+**Organização de Features e Versionamento**
+
+ - Github
+ - Trello
+
+**FRONT-END**
+
+ - React
+ - Redux
