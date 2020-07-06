@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-export const WrapperProfile = styled.div``;
+export const WrapperProfile = styled.div`
+  background-color: white;
+`;
 export const Title = styled.h1`
   font-size: 1.6em;
-  padding-top: 28px;
+  padding-top: 35px;
   text-align: center;
   color: #585858;
 `;
@@ -18,12 +20,17 @@ export const Div = styled.div`
     margin-top: 10px;
   }
 `;
+export const Img = styled.img`
+  height: 100px;
+  object-fit: cover;
+  background-color: white;
+`;
 export const Info = styled.div`
   position: relative;
   color: #585858;
-  margin: 62px 0px;
-  padding: 120px 42px;
-  height: 400px;
-  border-radius: 50px;
+
+  padding: 40px 30px;
+  height: 450px;
+  border-radius: 0 0 80px 80px;
   background-color: white;
 `;

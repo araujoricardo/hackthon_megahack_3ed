@@ -1,6 +1,7 @@
 import React from "react";
-import { WrapperProfile, Title, Div, Info } from "./style";
+import { WrapperProfile, Title, Div, Info, Img } from "./style";
 import Footer from "../../components/Footer";
+import kesNatalia from "../../../assets/undraw_female_avatar_w3jk.svg";
 
 export default class Profile extends React.Component {
   render() {
@@ -9,7 +10,9 @@ export default class Profile extends React.Component {
         <WrapperProfile>
           <Title>Meu perfil</Title>
         </WrapperProfile>
+
         <Info>
+          <Img src={kesNatalia} alt="logo da HamiTrainning"></Img>
           <p>
             <strong>Nome: </strong>Margaret Hamilton
           </p>
@@ -30,6 +33,7 @@ export default class Profile extends React.Component {
             <strong>E-mail: </strong>margaret@labenu
           </p>
         </Info>
+
         <Footer />
       </Div>
     );
