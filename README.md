@@ -30,12 +30,12 @@ Empresas que desejam capacitar seus funcionários, além de aumentar o engajamen
  
 **DESIGN**
 
- - Fiama
+🎨 :art: Figma
 
 **Organização de Features e Versionamento**
 
- - Github
- - Trello
+ :heavy_check_mark: Github
+ :heavy_check_mark: Trello
 
 **FRONT-END**
 
