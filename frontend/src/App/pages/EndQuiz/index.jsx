@@ -3,9 +3,12 @@ import { Container } from "./styles";
 import Footer from "../../components/Footer";
 import avatar from "../../../assets/undraw_female_avatar_w3jk.svg";
 import winners from "../../../assets/undraw_winners_ao2o.png";
+import { connect } from "react-redux";
 
 class EndQuiz extends React.Component {
   render() {
+    const { balance } = this.props;
+
     return (
       <>
         <Container>
@@ -19,7 +22,7 @@ class EndQuiz extends React.Component {
             <div>
               <img src={avatar} alt="" />
               <p>Olga</p>
-              <p>240</p>
+              <p>{balance}pts</p>
             </div>
           </div>
         </Container>
@@ -29,4 +32,4 @@ class EndQuiz extends React.Component {
   }
 }
 
-export default EndQuiz;
+export default connect((state) => ({ balance: state.shop.balance }))(EndQuiz);

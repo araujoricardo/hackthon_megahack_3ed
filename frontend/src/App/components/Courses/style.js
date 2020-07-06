@@ -45,14 +45,26 @@ export const CourseName = styled.h1`
   text-align: center;
 `;
 export const Status = styled.p`
-  color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  > p {
+    margin-left: 8px;
+    font-weight: bold;
+  }
+
+  > svg {
+    width: 24px;
+    height: 24px;
+  }
 `;
 export const Button = styled.button`
   width: 100%;
   padding: 8px 16px;
   border-radius: 8px;
-  background-color: #076178;
-  border: 2px solid #157c96;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
   color: white;
 `;
