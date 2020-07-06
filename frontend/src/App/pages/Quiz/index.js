@@ -56,16 +56,16 @@ class Quiz extends React.Component {
         {this.renderContent()}
         {this.props.currentQuestion === content.length - 1 ? (
           <ButtonQuizz onClick={() => this.props.goToEndQuiz()}>
-            end
+            Voltar
           </ButtonQuizz>
         ) : (
           <ButtonQuizz onClick={() => this.handleChangeQuestion(1)}>
-            next
+            Próximo
           </ButtonQuizz>
         )}
         {this.props.currentQuestion !== 0 && (
           <ButtonQuizz onClick={() => this.handleChangeQuestion(-1)}>
-            back
+            Voltar
           </ButtonQuizz>
         )}
       </QuizzWrapper>
