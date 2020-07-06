@@ -2,17 +2,22 @@ import React from "react";
 import { connect } from "react-redux";
 import CardType1 from "../../components/CardType1";
 import { setAnswer, setQuestion } from "../../../redux/actions/quiz";
-import { content1 } from "../../../contents/content1";
+import { content } from "../../../contents/content1";
 import { ButtonQuizz, NumberPage, QuizzWrapper } from "./style";
+import { replace } from "connected-react-router";
+import { routes } from "../../Router";
 
 class Quiz extends React.Component {
   renderContent = () => {
-    const question = content1[this.props.currentQuestion];
-
+    const question = content[this.props.currentQuestion];
     switch (question.type) {
       case "card1": {
         return (
-          <CardType1 element={question} handleAnswer={this.handleAnswer} />
+          <CardType1
+            activeOption={this.props.answer[this.props.currentQuestion]}
+            question={question}
+            handleAnswer={this.handleAnswer}
+          />
         );
       }
       case "card2": {
@@ -23,43 +28,46 @@ class Quiz extends React.Component {
 
   handleAnswer = (value) => {
     const { answer, currentQuestion, setAnswer } = this.props;
-
-    const answers = answer;
+    const answers = [...answer];
     answers[currentQuestion] = value;
-
     setAnswer(answers);
   };
 
   handleChangeQuestion = (value) => {
     const { currentQuestion, answer } = this.props;
-    const aux = currentQuestion + value;
-
-    if (content1[currentQuestion].answer === answer[currentQuestion]) {
+    const nextQuestion = currentQuestion + value;
+    if (content[currentQuestion].answer === answer[currentQuestion]) {
       console.log("resposta certa");
     } else {
       console.log("resposta errada");
     }
-
-    if (content1[aux]) {
+    if (content[nextQuestion]) {
       this.props.setQuestion(value);
     }
   };
 
   render() {
     const pageNumber = this.props.currentQuestion + 1;
-
     return (
       <QuizzWrapper>
         <NumberPage>
-          {pageNumber}/{content1.length}
+          {pageNumber}/{content.length}
         </NumberPage>
         {this.renderContent()}
-        <ButtonQuizz onClick={() => this.handleChangeQuestion(1)}>
-          next
-        </ButtonQuizz>
-        <ButtonQuizz onClick={() => this.handleChangeQuestion(-1)}>
-          back
-        </ButtonQuizz>
+        {this.props.currentQuestion === content.length - 1 ? (
+          <ButtonQuizz onClick={() => this.props.goToEndQuiz()}>
+            end
+          </ButtonQuizz>
+        ) : (
+          <ButtonQuizz onClick={() => this.handleChangeQuestion(1)}>
+            next
+          </ButtonQuizz>
+        )}
+        {this.props.currentQuestion !== 0 && (
+          <ButtonQuizz onClick={() => this.handleChangeQuestion(-1)}>
+            back
+          </ButtonQuizz>
+        )}
       </QuizzWrapper>
     );
   }
@@ -74,6 +82,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     setQuestion: (value) => dispatch(setQuestion(value)),
     setAnswer: (value) => dispatch(setAnswer(value)),
+    goToEndQuiz: () => dispatch(replace(routes.endQuiz)),
   };
 };
 

@@ -38,7 +38,6 @@ export class StartQuiz extends React.Component {
             <ButtonStart onClick={this.props.goToQuiz}> INICIAR </ButtonStart>
           </ButtonsWrapper>
         </WrapperStyle>
-        <Footer />
       </MainWrapper>
     );
   }

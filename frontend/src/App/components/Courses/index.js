@@ -55,7 +55,7 @@ class Courses extends Component {
   }
 }
 const mapDispatchToProps = (dispatch) => ({
-  gotToQuiz: () => dispatch(push(routes.quiz)),
+  gotToQuiz: () => dispatch(push(routes.startQuiz)),
 });
 
 export default connect(null, mapDispatchToProps)(Courses);
