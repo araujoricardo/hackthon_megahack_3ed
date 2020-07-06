@@ -45,4 +45,4 @@ Empresas que desejam capacitar seus funcionários, além de aumentar o engajamen
 ## Links e informações úteis
 
 [Trello](https://trello.com/b/guEPyY2R/hami-training)
-
+[Figma](https://www.figma.com/file/5Z7wZDNxt0eYEQli7HjbxM/MegaHack?node-id=7%3A3)
