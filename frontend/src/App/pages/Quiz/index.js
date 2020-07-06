@@ -42,7 +42,7 @@ class Quiz extends React.Component {
       console.log("resposta errada");
     }
     if (content[nextQuestion]) {
-      this.props.setQuestion(value);
+      this.props.setQuestion(currentQuestion + value);
     }
   };
 

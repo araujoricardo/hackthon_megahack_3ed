@@ -14,6 +14,7 @@ export const Container = styled.div`
     align-items: center;
 
     > img {
+      max-width: 400px;
       width: 100%;
     }
 

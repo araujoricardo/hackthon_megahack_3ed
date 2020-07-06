@@ -1,19 +1,19 @@
+import { push } from "connected-react-router";
 import React from "react";
 import { connect } from "react-redux";
+import imgQuiz from "../../../assets/startQuiz.svg";
+import { setQuestion } from "../../../redux/actions/quiz";
 import { routes } from "../../Router";
-import { push } from "connected-react-router";
-import Footer from "../../components/Footer";
 import {
-  MainWrapper,
-  ImgWrapper,
-  ImgQuiz,
-  WrapperStyle,
-  TextWrapper,
-  ButtonsWrapper,
   ButtonBack,
   ButtonStart,
+  ButtonsWrapper,
+  ImgQuiz,
+  ImgWrapper,
+  MainWrapper,
+  TextWrapper,
+  WrapperStyle,
 } from "./style";
-import imgQuiz from "../../../assets/startQuiz.svg";
 
 export class StartQuiz extends React.Component {
   render() {
@@ -35,7 +35,14 @@ export class StartQuiz extends React.Component {
           </TextWrapper>
           <ButtonsWrapper>
             <ButtonBack onClick={this.props.gotToHome}> VOLTAR </ButtonBack>
-            <ButtonStart onClick={this.props.goToQuiz}> INICIAR </ButtonStart>
+            <ButtonStart
+              onClick={() => {
+                this.props.setQuestion(0);
+                this.props.goToQuiz();
+              }}
+            >
+              INICIAR
+            </ButtonStart>
           </ButtonsWrapper>
         </WrapperStyle>
       </MainWrapper>
@@ -44,6 +51,7 @@ export class StartQuiz extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
+  setQuestion: (value) => dispatch(setQuestion(value)),
   gotToHome: () => dispatch(push(routes.home)),
   goToQuiz: () => dispatch(push(routes.quiz)),
 });

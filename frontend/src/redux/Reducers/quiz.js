@@ -8,7 +8,7 @@ const quiz = (state = initialState, action) => {
     case "SET_QUESTION": {
       return {
         ...state,
-        currentQuestion: state.currentQuestion + action.payload.value,
+        currentQuestion: action.payload.value,
       };
     }
     case "SET_ANSWER": {
