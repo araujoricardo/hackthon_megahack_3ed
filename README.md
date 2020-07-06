@@ -13,3 +13,13 @@ O app contará não só com atividades para reforço técnico como também, trar
 ## Público alvo:
 
 Empresas que desejam capacitar seus funcionários, além de aumentar o engajamento da equipe, com foco em especial, para Hami Training :books:, que tem parte dos seus colaboradores trabalhando de forma embarcada.
+
+**FRONT-END**
+
+ :heavy_check_mark: Layout da tela inicial
+ :heavy_check_mark: Layout HomePage
+ :heavy_check_mark: Layout da Empresa
+ :heavy_check_mark: Layout do Perfil
+ :heavy_check_mark: Layout do início do Quiz
+ :heavy_check_mark: Layout das perguntas do Quiz
+ :heavy_check_mark: Layout da pontuação
