@@ -13,3 +13,36 @@ O app contará não só com atividades para reforço técnico como também, trar
 ## Público alvo:
 
 Empresas que desejam capacitar seus funcionários, além de aumentar o engajamento da equipe, com foco em especial, para Hami Training :books:, que tem parte dos seus colaboradores trabalhando de forma embarcada.
+
+## Features Implementadas
+
+**FRONT-END**
+
+ :heavy_check_mark: Layout da tela inicial<br>
+ :heavy_check_mark: Layout HomePage<br>
+ :heavy_check_mark: Layout da Empresa<br>
+ :heavy_check_mark: Layout do Perfil<br>
+ :heavy_check_mark: Layout do início do Quiz<br>
+ :heavy_check_mark: Layout das perguntas do Quiz<br>
+ :heavy_check_mark: Layout da pontuação<br>
+ 
+ ## Tecnologias utilizadas
+ 
+**DESIGN**
+
+:art: Figma
+
+**Organização de Features e Versionamento**
+
+ :rocket: Github<br>
+ :rocket: Trello<br>
+
+**FRONT-END**
+
+:notebook: React<br>
+:notebook: Redux<br>
+
+## Links e informações úteis
+
+[Trello](https://trello.com/b/guEPyY2R/hami-training)<br>
+[Figma](https://www.figma.com/file/5Z7wZDNxt0eYEQli7HjbxM/MegaHack?node-id=7%3A3)

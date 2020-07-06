@@ -65,7 +65,7 @@ class Quiz extends React.Component {
         )}
         {this.props.currentQuestion !== 0 && (
           <ButtonQuizz onClick={() => this.handleChangeQuestion(-1)}>
-            Anterior
+            Voltar
           </ButtonQuizz>
         )}
       </QuizzWrapper>
