@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainWrapper = styled.section`
-  height: calc(100% - 64px);
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
