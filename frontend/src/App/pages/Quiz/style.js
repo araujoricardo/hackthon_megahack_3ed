@@ -13,8 +13,10 @@ export const NumberPage = styled.p`
 export const ButtonQuizz = styled.button`
   border: none;
   background: ${({ theme }) => theme.lightGray};
-  padding: 8px 16px;
-  border-radius: 8px;
+  width: 120px;
+  padding: 10px 0;
+  border-radius: 25px;
+  border: none;
 
   + button {
     margin-top: 8px;
