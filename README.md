@@ -57,7 +57,7 @@ Empresas que desejam capacitar seus funcionários, além de aumentar o engajamen
 
 ## Desenvolvido por:
 * [Cazuza Barberino](https://github.com/cazuza)</br>
-* [Erika Skarda](https://github.com/erika-skarda-99915488)</br>
+* [Erika Skarda](https://github.com/Erika-Skarda)</br>
 * [Natália Acedo](https://github.com/n-acedo)</br>
 * [Milene Taborda](https://github.com/future4code/milene-taborda)</br>
 * [Ricardo Araujo](https://github.com/araujoricardo)</br>
