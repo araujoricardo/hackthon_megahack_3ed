@@ -1,6 +1,11 @@
 # Hami Training :sailboat:
 
-## Problema:
+## Evento:
+3ª Edição do MegaHack
+Desafio: Volume & Wilson Sons.
+Data: jul/2020
+
+## Desafio:
 
 Capacitar colaboradores que trabalham remotos, embarcados 100% do tempo com acesso restrito ou nenhum a internet, através de treinamentos que atendam às demandas da empresa.
  
@@ -49,3 +54,10 @@ Empresas que desejam capacitar seus funcionários, além de aumentar o engajamen
 [Apresentação](https://drive.google.com/file/d/1MSxbJPhGJ4B_kXwXiRv65_G--hkM_rgU/view?usp=sharing)<br>
 [Trello](https://trello.com/b/guEPyY2R/hami-training)<br>
 [Figma](https://www.figma.com/file/5Z7wZDNxt0eYEQli7HjbxM/MegaHack?node-id=7%3A3)
+
+## Desenvolvido por:
+* [Cazuza Barberino](https://github.com/cazuza)</br>
+* [Erika Skarda](https://github.com/erika-skarda-99915488)</br>
+* [Natália Acedo](https://github.com/n-acedo)</br>
+* [Milene Taborda](https://github.com/future4code/milene-taborda)</br>
+* [Ricardo Araujo](https://github.com/araujoricardo)</br>
