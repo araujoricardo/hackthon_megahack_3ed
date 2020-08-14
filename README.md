@@ -1,9 +1,9 @@
 # Hami Training :sailboat:
 
 ## Evento:
-3ª Edição do MegaHack
-Desafio: Volume & Wilson Sons.
-Data: jul/2020
+3ª Edição do MegaHack</br>
+Desafio: Volume & Wilson Sons.</br>
+Data: jul/2020</br>
 
 ## Desafio:
 
